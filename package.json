@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "git-split",
+  "version": "0.1.0",
+  "description": "Git Split is an interactive utility that helps you split a repository into two or more sub repositories, while preserving the commit history as much as possible.",
+  "main": "main.js",
+  "dependencies": {
+  "async":"^1.4.x", 
+    "nodegit": "^0.4.x",
+    "nomnom":"^1.8.x",
+    "prompt":"^0.2.x",
+    "shelljs":"^0.5.x"
+  },
+  "devDependencies": {},
+  "bin": {
+    "git-split": "bin/git-split.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/fbartho/git-split"
+  },
+  "keywords": [
+    "git",
+    "split",
+    "repository",
+    "scm",
+    "utility"
+  ],
+  "author": {
+    "name":"Frederic Barthelemy",
+    "email":"git@fbartho.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fbartho/git-split/issues"
+  },
+  "homepage": "https://github.com/fbartho/git-split"
+}
