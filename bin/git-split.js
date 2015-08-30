@@ -15,6 +15,7 @@ if (!which("git")) {
 }
 
 (function main() {
+	parser.script("git-split")
 	parser.command("prepare")
 		.option("configs", {
 			abbr:"c",

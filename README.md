@@ -16,10 +16,55 @@ If you've ever started a project out as a single repo, but later wanted to extra
 
 # Documentation
 
-Documentation on commands and flags can be viewed on the commandline by passing `-h` or `--help`. Documentation for the `.splitconfig.json` file format can be found under [docs](../docs/splitconfig.json.md).
-Examples can be found [here](../example/).
+1. Documentation for the `.splitconfig.json` file format can be found under [docs](../docs/splitconfig.json.md).
+2. Examples can be found [here](../example/).
+3. Documentation on commands and flags can be viewed on the commandline by passing `-h` or `--help`. 
 
-### Installation
+	$ git split --help
+
+	Usage: git-split <command>
+
+	command     
+	  prepare          Interactive Git Repository Split Builder -- This command helps you adjust an existing splitconfig file, or helps you create your initial splitconfig files.
+	  apply            Apply the git-split configuration files to produce new repositories preserving the history of the files specified therein.
+	  installalias     Install a git alias globally so git-split can be called as `git split`
+
+	$ git split prepare -h
+
+### Prepare
+
+	$ git split prepare --help
+
+	Usage: git-split prepare [options]
+
+	Options:
+	   -c, --configs      Split-config file path(s) to edit or create. (If none, will help you create some)  [`*.splitconfig.json`]
+	   -n, --newconfigs   Force-create new Split-configs.
+	   -s, --sourcerepo   Source repository to split from.  [`pwd`]
+	   --makedelete       Make a delete commit for the files referenced in the passed in configs  [false]
+
+	Interactive Git Repository Split Builder -- This command helps you adjust an existing splitconfig file, or helps you create your initial splitconfig files.
+
+### Apply
+
+	$ git split apply --help
+
+	Usage: git-split apply [options]
+
+	Options:
+	   -c, --configs      Split-config file path(s) to read & apply to the source  [`*.splitconfig.json`]
+	   -s, --sourcerepo   Source repository to split from.  [`pwd`]
+
+	Apply the git-split configuration files to produce new repositories preserving the history of the files specified therein.
+
+### Install Alias
+
+	$ git split installalias --help
+
+	Usage: git-split installalias
+	Install a git alias globally so git-split can be called as `git split`
+
+## Installation
 
 	npm install --global git-split
 
@@ -27,7 +72,11 @@ or
 
 	git clone github.com/fbartho/git-split; cd git-split; npm link
 
-To install the global git alias and using this utility as `git split`, either add the following to your `~/.gitconfig`
+To install the global git alias and using this utility as `git split`, either run:
+	
+	$ git-split installalias
+
+Or add the following to your `~/.gitconfig`
 
 	[alias]
 		split = !git-split
