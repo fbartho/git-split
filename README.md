@@ -1,6 +1,24 @@
 git-split
 =========
 
+### Todo / Status
+
+- [X] Structure, Planning, and GitHub Repo
+- [x] Prepare Interactive Script
+- [ ] Apply Interactive Script
+	- [ ] Can split simple repos (no merges).
+	- [ ] Can split simple merges (no conflicts).
+	- [ ] Can split conflicted merges (no branch collisions, no file collisions).
+	- [ ] Can split with branch problems
+		- [ ] necessary branches already exist in target repo.
+	- [ ] Can split with file collisions
+		- [ ] file already exists at destination - delete-first, then do branch manipulations
+		- [ ] file already exists at destination - overwrite (with final data)
+- [ ] Publish to NPM
+- ? UnitTests
+
+# WARNING: this is WIP
+
 # Purpose
 
 Git Split is an interactive utility that helps you split a repository into two or more repositories, while preserving the commit history as much as possible.
