@@ -38,14 +38,16 @@ If you've ever started a project out as a single repo, but later wanted to extra
 2. Examples can be found [here](../example/).
 3. Documentation on commands and flags can be viewed on the commandline by passing `-h` or `--help`. 
 
-		$ git split --help
-		
-		Usage: git-split &lt;command&gt
-		
-		command     
-		  prepare          Interactive Git Repository Split Builder -- This command helps you adjust an existing splitconfig file, or helps you create your initial splitconfig files.
-		  apply            Apply the git-split configuration files to produce new repositories preserving the history of the files specified therein.
-		  installalias     Install a git alias globally so git-split can be called as 'git split'
+### Basics
+
+	$ git split --help
+	
+	Usage: git-split &lt;command&gt
+	
+	command     
+	  prepare          Interactive Git Repository Split Builder -- This command helps you adjust an existing splitconfig file, or helps you create your initial splitconfig files.
+	  apply            Apply the git-split configuration files to produce new repositories preserving the history of the files specified therein.
+	  installalias     Install a git alias globally so git-split can be called as 'git split'
 
 ### Prepare
 
