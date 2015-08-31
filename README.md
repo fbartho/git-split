@@ -42,7 +42,7 @@ If you've ever started a project out as a single repo, but later wanted to extra
 
 	$ git split --help
 	
-	Usage: git-split \<command\>
+	Usage: git-split <command>
 	
 	command     
 	  prepare          Interactive Git Repository Split Builder -- This command helps you adjust an existing splitconfig file, or helps you create your initial splitconfig files.
