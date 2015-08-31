@@ -34,8 +34,8 @@ If you've ever started a project out as a single repo, but later wanted to extra
 
 # Documentation
 
-1. Documentation for the `.splitconfig.json` file format can be found under [docs](../docs/splitconfig.json.md).
-2. Examples can be found [here](../example/).
+1. Documentation for the `.splitconfig.json` file format can be found under [docs](./docs/splitconfig.json.md).
+2. Examples can be found [here](./example/).
 3. Documentation on commands and flags can be viewed on the commandline by passing `-h` or `--help`. 
 
 ### Basics
